@@ -36,16 +36,16 @@ class Solution:
         # res = counter.most_common(k)
         # return [item[0] for item in res]
 
-        res = []
-        n = len(nums)
-        count = Counter(nums)
-        bucket = [[] for _ in range(n + 1)]
-        for num, frq in count.items():
-            bucket[frq].append(num)
-        for i in range(n, -1, -1):
-            if len(bucket[i]) > 0:
-                for num in bucket[i]:
-                    res.append(num)
-                    if len(res) == k:
-                        return res
-        return res
+        # res = []
+        # n = len(nums)
+        # count = Counter(nums)
+        # bucket = [[] for _ in range(n + 1)]
+        # for num, frq in count.items():
+        #     bucket[frq].append(num)
+        # for i in range(n, -1, -1):
+        #     if len(bucket[i]) > 0:
+        #         for num in bucket[i]:
+        #             res.append(num)
+        #             if len(res) == k:
+        #                 return res
+        # return res
